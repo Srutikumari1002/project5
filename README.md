@@ -2,4 +2,4 @@
 
 This project was created from local system.
 
-Created by Sruti Kumari
+Created by The Sruti Kumari.
