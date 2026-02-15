@@ -1,1 +1,101 @@
-/*add new feature-button
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/gradient-numerology-background_23-2150051043.jpg");
+  background-size: cover;         /* makes it cover full screen */ 
+  background-position: center;     /* keeps image centered */ 
+  background-repeat: no-repeat;    /* prevents tiling */
+  background-attachment: fixed;    /* keeps it fixed during scroll */
+  font-family: Arial, sans-serif;
+  color: #0baec0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background:whitesmoke;
+  padding: 55px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1db50f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #43a047;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 6px;
+  text-align: center;
+}
+#resultMessage {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #220dad;
+}
+
+#restartBtn {
+  margin-top: 10px;
+  background: #2196f3;
+}
+#hintsBox {
+  margin-top: 10px;
+  background: #1f1f2f;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#hintsBox p {
+  margin: 5px 0;
+  color: #90caf9;
+}
+#timer {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ff5252;
+  font-weight: bold;
+}
+#game button,
+#game input {
+  margin-top: 10px;
+}

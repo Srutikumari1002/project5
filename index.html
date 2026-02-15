@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+
+        <div id="setup">
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <input type="number" id="digitCount" placeholder="Digits (3–6)" min="3" max="6">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="game" class="hidden">
+            <h2 id="welcome"></h2>
+            <p id="timer"></p>
+
+            <input type="text" id="guessInput" placeholder="Enter your guess">
+            <button onclick="checkGuess()">Guess</button>
+            <button id="hintBtn" onclick="showHints()">Show Hints (3 left)</button>
+
+            <div id="hintsBox">
+                <p id="evenHint"></p>
+
+            </div>
+
+
+            <p id="resultMessage"></p>
+            <button id="restartBtn" class="hidden" onclick="restartGame()">Restart Game</button>
+
+            <div id="history">
+                <h3>Previous Attempts</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Guess</th>
+                            <th>Correct Digits</th>
+                            <th>Right Place</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
